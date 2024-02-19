@@ -33,42 +33,40 @@ document.getElementById('togglePassword').addEventListener('click', function () 
 });
 //OJO DE MI CUENTA
 
+var cursos = {
+    "usuario1": {
+        "contraseña": "contraseña1",
+        "curso": "diseñodeportivo",
+        "pagina": "diseñodeportivo.html"
+    },
+    "usuario2": {
+        "contraseña": "contraseña2",
+        "curso": "diseñodemarca",
+        "pagina": "diseñodemarca.html"
+    },
+};
 
-//BASE DE DATOS (USUARIOS)
-var users = [
-    { username: "usuario1", password: "contraseña1" },
-    { username: "usuario2", password: "contraseña2" },
-    // Agrega más usuarios si es necesario
-];
+function redirigirAlumno(nombreUsuario, contraseñaUsuario) {
+    if (cursos[nombreUsuario] && cursos[nombreUsuario].contraseña === contraseñaUsuario) {
+        var paginaHTML = cursos[nombreUsuario].pagina;
+        window.location.href = paginaHTML;
+    } else {
+        console.log("Nombre de usuario o contraseña incorrectos.");
+    }
+}
 
-// Evento clic para el botón de "Iniciar Sesión"
-document.querySelector('input[type="submit"]').addEventListener('click', function () {
-    var usernameInput = document.getElementById('username').value;
-    var passwordInput = document.getElementById('password').value;
-
-    // Verifica si las credenciales son válidas comparándolas con la "base de datos" de usuarios
-    var isValid = users.some(function (user) {
-        return user.username === usernameInput && user.password === passwordInput;
+function iniciarSesion() {
+    var nombreUsuario = document.getElementById("username").value;
+    var contraseñaUsuario = document.getElementById("password").value;
+    redirigirAlumno(nombreUsuario, contraseñaUsuario);
+}
+    // Agregar evento de clic al botón de iniciar sesión
+    document.getElementById("loginButton").addEventListener("click", function() {
+        iniciarSesion();
     });
 
-    if (isValid) {
-        // Si las credenciales son válidas, redirige a la página de destino (diseñodeportivo.html en este caso)
-        window.location.href = "diseñodeportivo.html";
-    } else {
-        // Si las credenciales no son válidas, muestra un mensaje de error con estilo
-        var errorMessage = "Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.";
-        displayAlert(errorMessage);
-    }
-    
-    function displayAlert(message) {
-        var alertElement = document.getElementById('alertMessage');
-        alertElement.textContent = message;
-        alertElement.style.backgroundColor = '#c657e6';
-        alertElement.style.color = 'white';
-        alertElement.style.padding = '15px';
-        alertElement.style.textAlign = 'center';
-        alertElement.style.fontSize = '18px';
-        alertElement.style.display = 'block';
-    }}
-);
-//BASE DE DATOS (USUARIOS)
+    // También puedes agregar un evento para manejar el envío del formulario cuando se presiona Enter
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar el envío del formulario por defecto
+        iniciarSesion();
+    });
