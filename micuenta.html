@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Prime | Mi Cuenta</title>
+    <link rel="shortcut icon" href="./assets/img/logotipo original.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body class="aparicion">
+    <header> <!--ENCABEZADO-->
+        <img class="logo" src="./assets/img/logotipo original.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li><a href="micuenta.html">MI CUENTA</a></li>
+            </ul>
+        </nav>
+    </header> <!--ENCABEZADO-->
+    <main>
+        <div class="login-box">
+            <h1>MI CUENTA</h1>
+            <div class="input-group">
+                <label for="username"><i class="fa fa-user"></i></label>
+                <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="password"><i class="fa fa-lock"></i></label>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <button type="button" id="togglePassword"><i class="fa fa-eye"></i></button>
+            </div>
+            <input type="submit" value="Iniciar Sesión">
+        </div>
+        <div id="alertMessage"></div>
+    </main>
+    <div class="chat-btn">
+        <a href="https://www.instagram.com/academyprimeuy/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/instagram.png" alt="Instagram Chat">
+        </a>
+    </div>
+    <footer>
+        <div>
+            <h3>Comunidad</h3>
+            <ul>
+                <li><a href="#">Prime para empresas</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Experiencias de estudiantes</a></li>
+                <li><a href="#">Alianzas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Equipo</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Educación</h3>
+            <ul>
+                <li><a href="#">Audio Visuales</a></li>
+                <li><a href="#">Diseño Gráfico</a></li>
+                <li><a href="#">Programación y Desarrollo</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Equipo</h3>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Sumate a nuestro equipo</a></li>
+                <li><a href="#">Protección de Datos personales</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h3>Regístrate a nuestro Newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Ingresá tu mail" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+    <script src="./public/javascript/script.js"></script>
+</body>
+
+</html>
