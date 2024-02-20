@@ -290,7 +290,7 @@ header {
 /* Sector CURSOS */
 
 
-
+/* Sector LOGIN */
 .login-box {
     width: 320px;
     margin: 100px auto;
@@ -298,35 +298,30 @@ header {
     border: 5px solid #c657e6;
     border-radius: 5px;
     background-color: #000000;
-  }
-  
-  .login-box h1 {
+}
+.login-box h1 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
-  }
-  
-  .input-group {
+}
+.input-group {
     position: relative;
     margin-bottom: 20px;
-  }
-  
-  .input-group label {
+}
+.input-group label {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
     color: #666;
-  }
-  
-  .input-group input {
+}
+.input-group input {
     padding: 10px 40px 10px 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #333;
-  }
-  
-  .input-group button {
+}
+.input-group button {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -335,25 +330,21 @@ header {
     border: none;
     cursor: pointer;
     color: #c657e6;
-  }
-  
-  .input-group button:hover {
+}
+.input-group button:hover {
     color: white;
-  }
-  
-  .fa {
+}
+.fa {
     font-family: "Font Awesome 5 Free";
     color: #c657e6;
-  }
-  
-  .fa-eye-slash:before {
+}
+.fa-eye-slash:before {
     content: "\f070";
-  }
-  
-  .fa-eye:before {
+}
+.fa-eye:before {
     content: "\f06e";
-  }
-  .login-box input[type="submit"] {
+}
+.login-box input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-left: 5px;
@@ -364,13 +355,13 @@ header {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .login-box input[type="submit"]:hover {
+}
+.login-box input[type="submit"]:hover {
     background-color: white;
     color: #c657e6;
     transition: 0.9s;
-  }
+}
+/* Sector LOGIN */
 
 
 
@@ -383,34 +374,29 @@ header {
 
 
 
-
-
-  .videos {
+/* Sector VIDEOS */
+.videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .video {
+}
+.video {
     margin: 20px;
     width: 300px;
-  }
-  
-  .video h2 {
+}
+.video h2 {
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  video {
+}
+video {
     width: 100%;
     height: auto;
-  }
-  .container-plataforma {
+}
+.container-plataforma {
     text-align: center;
     margin-top: 50px;
-  }
-
-  .btn-chat {
+}
+.btn-chat {
     display: inline-block;
     padding: 10px 20px;
     background-color: #c657e6;
@@ -418,16 +404,13 @@ header {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-
-  .btn-chat:hover {
+}
+.btn-chat:hover {
     background-color: white;
     color: #c657e6;
     transition: 0.9s;
-  }
-
-
-
+}
+/* Sector VIDEOS */
 
 
 

@@ -15,7 +15,6 @@ cerrar.addEventListener("click", () => {
 
 
 
-
 //OJO DE MI CUENTA
 document.getElementById('togglePassword').addEventListener('click', function () {
     var passwordInput = document.getElementById('password');
