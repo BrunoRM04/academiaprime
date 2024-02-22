@@ -38,10 +38,10 @@ var cursos = {
         "curso": "diseñodeportivo",
         "pagina": "diseñodeportivo.html"
     },
-    "usuario2": {
-        "contraseña": "contraseña2",
-        "curso": "diseñodemarca",
-        "pagina": "diseñodemarca.html"
+    "verocazaphoto": {
+        "contraseña": "aps2.pdw",
+        "curso": "diseñodeportivo",
+        "pagina": "diseñodeportivo.html"
     },
 };
 
