@@ -295,35 +295,40 @@ header {
     width: 320px;
     margin: 100px auto;
     padding: 40px;
-    border: 5px solid #c657e6;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #000000;
 }
 .login-box h1 {
     text-align: center;
-    color: #ffffff;
+    color: #c657e6;
     margin-bottom: 20px;
 }
 .input-group {
-    position: relative;
     margin-bottom: 20px;
+    position: relative;
 }
 .input-group label {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #666;
+    display: block;
+    color: #c657e6;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 .input-group input {
-    padding: 10px 40px 10px 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #333;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    color: #ffffff;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+.input-group input:focus {
+    outline: none;
+    border-bottom-color: #c657e6;
 }
 .input-group button {
     position: absolute;
-    right: 10px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     background: transparent;
@@ -332,33 +337,22 @@ header {
     color: #c657e6;
 }
 .input-group button:hover {
-    color: white;
-}
-.fa {
-    font-family: "Font Awesome 5 Free";
     color: #c657e6;
-}
-.fa-eye-slash:before {
-    content: "\f070";
-}
-.fa-eye:before {
-    content: "\f06e";
 }
 .login-box input[type="submit"] {
     width: 100%;
     padding: 10px;
-    margin-left: 5px;
     border: none;
     border-radius: 20px;
     background-color: #c657e6;
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .login-box input[type="submit"]:hover {
     background-color: white;
-    color: #c657e6;
+    color: #a03ca6;
     transition: 0.9s;
 }
 /* Sector LOGIN */
