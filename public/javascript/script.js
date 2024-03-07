@@ -37,22 +37,7 @@ var cursos = {
         "contraseña": "contraseña1",
         "curso": "diseñodeportivo",
         "pagina": "diseñodeportivo.html"
-    },
-    "verocazaphoto": {
-        "contraseña": "aps2.pdw",
-        "curso": "diseñodeportivo",
-        "pagina": "diseñodeportivo.html"
-    },
-    "nahubrambi": {
-        "contraseña": "z.6et88u",
-        "curso": "diseñodeportivo",
-        "pagina": "diseñodeportivo.html"
-    },
-    "cesarcudjoe": {
-        "contraseña": ".7jocwjw",
-        "curso": "diseñodeportivo",
-        "pagina": "diseñodeportivo.html"
-    },
+    }
 };
 
 function redirigirAlumno(nombreUsuario, contraseñaUsuario) {

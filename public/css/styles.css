@@ -182,47 +182,33 @@ header {
 
 
 /* Sector EQUIPO */
-.team-section {
+.certificado-section {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #000000;
-    position: relative;
-    margin-top: 30px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.team-section h3 {
+.certificado-section h3 {
     font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    margin-top: 35px;
-}
-.team-member {
-    margin: 0 20px 40px;
-    width: 200px;
-    transition: transform 0.3s ease;
-}
-.team-member img {
-    max-width: 100%;
-    border-radius: 50%;
     margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-.team-member img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.team-member h4 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.team-member p {
-    font-size: 16px;
     color: #ffffff;
+    font-weight: 800;
+    font-size: 28px;
+}
+.certificado-section img {
+    max-width: 70%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .certificado-section img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .certificado-section img {
+        max-width: 100%;
+    }
 }
 /* Sector EQUIPO */
 
